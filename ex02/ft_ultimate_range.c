@@ -6,7 +6,7 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/02 20:38:35 by mgould            #+#    #+#             */
-/*   Updated: 2016/11/03 15:27:09 by mgould           ###   ########.fr       */
+/*   Updated: 2016/11/03 18:25:29 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 		*range = NULL;
 		return (0);
 	}
-	size = (max - min) * sizeof(int);
+	size = sizeof(int) * (max - min);
 	*range = ft_range(min, max);
 	return (size);
 }
